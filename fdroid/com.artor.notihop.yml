@@ -21,7 +21,7 @@ sig: adc9883395a976e22a74ff4397e396b0830195664d41a936f544d48db742feff
 Builds:
   - versionName: '1.0'
     versionCode: 1
-    commit: 33483272aa6b511a2dbfda70241c8ab58db11710
+    commit: fa791fe6ad897c187cc3426902ba7aa71d813ea3
     submodules: false
     gradle:
       - yes
