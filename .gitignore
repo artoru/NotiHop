@@ -26,6 +26,10 @@ local.properties
 *.keystore
 release/
 
+# Signing (kept local, never committed)
+secrets/
+keystore.properties
+
 # Claude Code / agent files (kept local, machine-specific)
 .claude/
 CLAUDE.md
