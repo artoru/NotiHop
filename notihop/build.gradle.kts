@@ -4,6 +4,11 @@ plugins {
     id("org.jetbrains.kotlin.plugin.serialization")
 }
 
+// Don't bake the git commit/state into the APK: F-Droid rebuilds from a clean checkout,
+// and vcs-info would otherwise differ between our build and theirs, breaking the
+// reproducible-build match.
+extra["vcsInfo.buildId"] = ""
+
 android {
     namespace = "com.artor.notihop"
     compileSdk = 37
