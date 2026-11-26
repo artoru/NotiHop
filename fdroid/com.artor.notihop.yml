@@ -16,7 +16,7 @@ Binaries: https://github.com/artoru/NotiHop/releases/download/%v/NotiHop-%v.apk
 Builds:
   - versionName: '1.0'
     versionCode: 1
-    commit: 7a9d820df759b00df8fa53b5b13913bb1f9da75b
+    commit: 0588086db13cf61d7ebaccc6a69aff8ddbda34f8
     gradle:
       - yes
     output: notihop/build/outputs/apk/release/notihop-release-unsigned.apk
