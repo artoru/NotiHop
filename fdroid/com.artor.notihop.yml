@@ -7,7 +7,7 @@ SourceCode: https://github.com/artoru/NotiHop
 IssueTracker: https://github.com/artoru/NotiHop/issues
 Changelog: https://github.com/artoru/NotiHop/releases
 
-AutoName: false
+AutoName: NotiHop
 
 RepoType: git
 Repo: https://github.com/artoru/NotiHop.git
@@ -17,9 +17,13 @@ Builds:
   - versionName: '1.0'
     versionCode: 1
     commit: 8461fdf116ac34c3f328bf2892737d9eda879f1d
-    submodules: false
     gradle:
       - yes
     output: notihop/build/outputs/apk/release/notihop-release-unsigned.apk
 
 AllowedAPKSigningKeys: adc9883395a976e22a74ff4397e396b0830195664d41a936f544d48db742feff
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
+CurrentVersion: '1.0'
+CurrentVersionCode: 1
