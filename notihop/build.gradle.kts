@@ -4,11 +4,6 @@ plugins {
     id("org.jetbrains.kotlin.plugin.serialization")
 }
 
-// Don't bake the git commit/state into the APK: F-Droid rebuilds from a clean checkout,
-// and vcs-info would otherwise differ between our build and theirs, breaking the
-// reproducible-build match.
-extra["vcsInfo.buildId"] = ""
-
 android {
     namespace = "com.artor.notihop"
     compileSdk = 37
@@ -28,6 +23,12 @@ android {
             // notihop-release-unsigned.apk. We sign it externally with apksigner
             // (see tools/sign.sh), and F-Droid rebuilds + verifies the same bytes.
             // Keeping signing out of Gradle avoids AGP's per-run signing variance.
+            // AGP embeds the current git revision in META-INF/version-control-info.textproto,
+            // which would make the APK depend on the git state of whoever built it.
+            // Disable it so our APK and F-Droid's rebuild are identical.
+            vcsInfo {
+                include = false
+            }
         }
     }
 

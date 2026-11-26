@@ -24,6 +24,7 @@ STOREPASS=$(sed -n 's/^storePassword=//p' "$PROPS")
 KEYPASS=$(sed -n 's/^keyPassword=//p' "$PROPS")
 
 export JAVA_HOME="${JAVA_HOME:-$HOME/android-studio/jbr}"
+export ANDROID_HOME="${ANDROID_HOME:-$SDK}"
 echo "Building unsigned release APK..."
 ./gradlew -q clean assembleRelease
 
