@@ -1,0 +1,21 @@
+Categories:
+  - Internet & Networking
+License: MIT
+WebSite: https://github.com/artoru/NotiHop
+SourceCode: https://github.com/artoru/NotiHop
+IssueTracker: https://github.com/artoru/NotiHop/issues
+Changelog: https://github.com/artoru/NotiHop/releases
+
+AutoName: false
+
+Repo: https://github.com/artoru/NotiHop.git
+RepoType: git
+
+Builds:
+  - versionName: '1.0'
+    versionCode: 1
+    commit: '1'
+    submodules: false
+    gradle:
+      - yes
+    output: notihop/build/outputs/apk/release/notihop-release-unsigned.apk
