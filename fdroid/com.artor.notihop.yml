@@ -12,12 +12,6 @@ AutoName: false
 Repo: https://github.com/artoru/NotiHop.git
 RepoType: git
 
-# Reproducible builds: F-Droid rebuilds from source and verifies against our
-# published signed APK. Our release build is byte-for-byte deterministic
-# (unsigned APK identical across runs; signed externally with apksigner, v2 only).
-# Cert SHA-256 fingerprint of our signing key:
-sig: adc9883395a976e22a74ff4397e396b0830195664d41a936f544d48db742feff
-
 Builds:
   - versionName: '1.0'
     versionCode: 1
@@ -25,4 +19,6 @@ Builds:
     submodules: false
     gradle:
       - yes
+    # Cert SHA-256 fingerprint of our signing key (build-level field).
+    sig: adc9883395a976e22a74ff4397e396b0830195664d41a936f544d48db742feff
     output: notihop/build/outputs/apk/release/notihop-release-unsigned.apk
