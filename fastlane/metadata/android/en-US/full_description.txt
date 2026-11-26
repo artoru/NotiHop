@@ -1,0 +1,21 @@
+NotiHop forwards notifications one-way from a <b>sender</b> phone to a <b>receiver</b> phone over a direct, paired Classic Bluetooth (RFCOMM/SPP) connection. Both phones install the same app; you pick the role in Settings. No internet is used and no data ever leaves your Bluetooth range.
+
+The sender captures its own notifications via Android's Notification Listener and transmits them; the receiver posts them as local notifications. Messaging apps (WhatsApp, Telegram, SMS) are reconstructed as proper conversation notifications, so a new message updates the existing conversation rather than spamming you.
+
+Features:
+
+- <b>App filter</b> — choose which apps' notifications are forwarded. New apps can be enabled automatically (configurable).
+- <b>Phone call forwarding</b> — optionally forward incoming calls as notifications, with the caller's name resolved from your local contacts.
+- <b>Autostart</b> — optionally restart the service after a reboot.
+- <b>Connect-on-demand</b> — the sender connects only when there is something to send, then disconnects, to save battery.
+
+Privacy:
+
+- No internet permission at all. Everything stays on your two devices over Bluetooth.
+- No analytics, no ads, no third-party trackers, no crash reporting.
+- Contacts and the incoming-call number are read only on the sender, only when call forwarding is enabled, and only the resolved caller name is transmitted.
+- The only thing stored on-device is your settings (role, paired device address, filters).
+
+Permissions: Bluetooth (connect/scan), notification posting, a foreground service, boot completion, battery-optimisation exemption, and (for the optional call-forwarding feature) phone state, call log and contacts.
+
+NotiHop is free and open source (MIT). Both devices must be owned by the same user and support Classic Bluetooth. Android 8.0 (API 26) or newer.
