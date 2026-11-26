@@ -1,0 +1,39 @@
+# Gradle
+.gradle/
+build/
+**/build/
+
+# Local configuration (contains machine-specific SDK path)
+local.properties
+
+# Android Studio / IntelliJ IDEA
+.idea/workspace.xml
+.idea/caches/
+.idea/deploymentTargetSelector.xml
+.idea/deviceManager.xml
+.idea/migrations.xml
+.idea/.name
+.kotlin/
+
+# Compiled output
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# Keystore files
+*.jks
+*.keystore
+release/
+
+# Claude Code / agent files (kept local, machine-specific)
+.claude/
+CLAUDE.md
+
+# Play Store publishing documents (kept local, not committed)
+PRIVACY_POLICY.md
+DATA_SAFETY_FORM.md
+
+# OS
+.DS_Store
+Thumbs.db
