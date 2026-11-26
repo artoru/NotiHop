@@ -1,0 +1,7 @@
+1.0 (2026-11-26)
+- Initial release.
+- One-way notification forwarding from a sender phone to a receiver phone over Classic Bluetooth (RFCOMM/SPP).
+- Messaging apps reconstructed as conversation-style notifications.
+- Per-app notification filter.
+- Optional incoming-call forwarding with caller name resolved from contacts.
+- Optional autostart after reboot.

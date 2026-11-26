@@ -15,7 +15,7 @@ RepoType: git
 Builds:
   - versionName: '1.0'
     versionCode: 1
-    commit: '1'
+    commit: 33483272aa6b511a2dbfda70241c8ab58db11710
     submodules: false
     gradle:
       - yes
